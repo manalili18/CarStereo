@@ -64,7 +64,7 @@
                 android:text="Volume"
                 android:id="@+id/volumetextView"
                 android:layout_row="1"
-                android:layout_column="0" />
+                android:layout_column="1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
                 android:text="Tuner"
                 android:id="@+id/tunertextView"
                 android:layout_row="1"
-                android:layout_column="6" />
+                android:layout_column="5" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -326,13 +326,15 @@
                         android:layout_column="0" />
 
                     <ProgressBar
-                        style="?android:attr/progressBarStyleLarge"
-                        android:layout_width="wrap_content"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/TrackprogressBar"
                         android:layout_row="0"
                         android:layout_column="1"
-                        android:background="#FFFFFFFF" />
+                        android:background="#FFFFFFFF"
+                        android:max="100"
+                        android:progress="75" />
 
                 </GridLayout>
             </LinearLayout>
